@@ -1,0 +1,42 @@
+<div class="side-nav-styles">
+    <div>
+        <img src="assets/logo_market.png" class="MarketLogo" alt="Market">
+    </div>
+    <a
+      routerLink=""
+      [ngClass]="selectedTab$() === 'buy' ? 'active' : ''"
+      class="side-nav-item"
+    >
+        <div>
+            <i class="fas fa-shopping-cart icon-style"></i>
+        </div>
+        <span class="side-nav-item-text">
+            Покупка
+        </span>
+    </a>
+    <a
+      routerLink="/basket"
+      [ngClass]="selectedTab$() === 'basket' ? 'active' : ''"
+      class="side-nav-item"
+    >
+        <div>
+            <i class="fas fa-shopping-basket icon-style"></i>
+        </div>
+        <span class="side-nav-item-text">
+            Корзина
+        </span>
+    </a>
+    <a
+      routerLink="/history"
+      [ngClass]="selectedTab$() === 'history' ? 'active' : ''"
+      class="side-nav-item"
+    >
+        <div>
+            <i class="fas fa-history icon-style"></i>
+        </div>
+        <span class="side-nav-item-text">
+            История
+        </span>
+    </a>
+    <div class="border"></div>
+</div>

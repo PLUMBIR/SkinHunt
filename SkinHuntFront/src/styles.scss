@@ -1,0 +1,13 @@
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+.sign-in-page {
+  .nav-pills .nav-link{
+    background-color: #806cf5;
+    color: #fff;
+  }
+
+  .nav-pills .nav-link.active {
+    background-color: rgba(128,108,245,0.5);
+    color: #fff;
+  }
+}

@@ -1,0 +1,7 @@
+<div class="users-container">
+  <div class="cards-container container">
+    @for (userCard of usersList$(); track userCard) {
+      <user-card [user]="userCard"></user-card>
+    }
+  </div>
+</div>

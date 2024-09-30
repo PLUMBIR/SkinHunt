@@ -1,0 +1,147 @@
+<div class="p-1 d-flex w-100 justify-content-center pb-4 pt-4 bg-sign-in rounded-2 sign-in-page">
+  <mdb-tabs #tabs [pills]="true" [fill]="true" style="width: 340px;">
+    <mdb-tab title="Войти">
+      <form
+        [formGroup]="signInForm"
+      >
+        <!-- Email input -->
+        <mdb-form-control class="input-style">
+          <input
+            mdbValidate
+            mdbInput
+            type="email"
+            id="loginEmail"
+            class="form-control"
+            formControlName="email"
+            placeholder="myexample@gmail.com"
+            required
+          />
+          <label mdbLabel class="form-label" for="loginEmail">Email</label>
+          <mdb-error
+            *ngIf="SignInEmail?.invalid && (SignInEmail?.dirty || SignInEmail?.touched)"
+            >Email должен быть заполнен<i class="fas fa-times ps-1"></i>
+          </mdb-error>
+          <mdb-success
+            *ngIf="SignInEmail?.valid && (SignInEmail?.dirty || SignInEmail?.touched)"
+            ><i class="fas fa-check"></i>
+          </mdb-success>
+        </mdb-form-control>
+
+        <!-- Password input -->
+        <mdb-form-control class="input-style">
+          <input
+            mdbValidate
+            mdbInput
+            type="password"
+            id="loginPassword"
+            class="form-control"
+            formControlName="password"
+            placeholder="password1234"
+            required
+          />
+          <label mdbLabel class="form-label" for="loginPassword">Пароль</label>
+          <mdb-error
+            *ngIf="SignInPassword?.invalid && (SignInPassword?.dirty || SignInPassword?.touched)"
+            >Пароль должен быть заполнен<i class="fas fa-times ps-1"></i>
+          </mdb-error>
+          <mdb-success
+            *ngIf="SignInPassword?.valid && (SignInPassword?.dirty || SignInPassword?.touched)"
+            ><i class="fas fa-check"></i>
+          </mdb-success>
+        </mdb-form-control>
+
+        @if(errorLogIn$()){
+          <div class="errorText">
+            Email или пароль не совпадают
+          </div>
+        }
+        <!-- Submit button -->
+        <button mdbRipple type="submit" class="btn btn-primary btn-block mb-4" [disabled]="this.signInForm.invalid" (click)="onSubmitSignIn()">
+          Войти
+        </button>
+        <!-- Register buttons -->
+        <div class="text-center">
+          <p class="text-style">Не зарегистрированы? <a id="register-link" href="#!" (click)="setActiveTab()">Регистрация</a></p>
+        </div>
+      </form>
+    </mdb-tab
+    >
+    <mdb-tab title="Регистрация">
+      <form [formGroup]="signUpForm">
+        <!-- Email input -->
+        <mdb-form-control class="input-style">
+          <input
+            mdbValidate
+            mdbInput
+            type="email"
+            id="registerEmail"
+            class="form-control"
+            formControlName="email"
+            placeholder="myexample@gmail.com"
+            required
+          />
+          <label mdbLabel class="form-label" for="registerEmail">Email</label>
+          <mdb-error
+            *ngIf="SignUpEmail?.invalid && (SignUpEmail?.dirty || SignUpEmail?.touched)"
+            >Email должен быть заполен<i class="fas fa-times ps-1"></i>
+          </mdb-error>
+          <mdb-success
+            *ngIf="SignUpEmail?.valid && (SignUpEmail?.dirty || SignUpEmail?.touched)"
+            ><i class="fas fa-check"></i>
+          </mdb-success>
+        </mdb-form-control>
+
+        <mdb-form-control class="input-style">
+          <input
+            mdbValidate
+            mdbInput
+            type="tel"
+            id="phoneNumber"
+            class="form-control"
+            formControlName="phoneNumber"
+            placeholder="+375293333333"
+            required
+          />
+          <label mdbLabel class="form-label" for="phoneNumber">Номер телефона</label>
+          <mdb-error
+            *ngIf="SignUpPhoneNumber?.invalid && (SignUpPhoneNumber?.dirty || SignUpPhoneNumber?.touched)"
+            ><i class="fas fa-times ps-1"></i>
+          </mdb-error>
+          <mdb-success
+            *ngIf="SignUpPhoneNumber?.valid && (SignUpPhoneNumber?.dirty || SignUpPhoneNumber?.touched)"
+            ><i class="fas fa-check"></i>
+          </mdb-success>
+        </mdb-form-control>
+
+        <!-- Password input -->
+        <mdb-form-control class="input-style">
+          <input
+            mdbValidate
+            mdbInput
+            type="password"
+            id="registerPassword"
+            class="form-control"
+            formControlName="password"
+            placeholder="password1234"
+            required
+          />
+          <label mdbLabel class="form-label" for="registerPassword">Пароль</label>
+          <mdb-error
+            *ngIf="SignUpPassword?.invalid && (SignUpPassword?.dirty || SignUpPassword?.touched)"
+            >Пароль должен быть заполен<i class="fas fa-times ps-1"></i>
+          </mdb-error>
+          <mdb-success
+            *ngIf="SignUpPassword?.valid && (SignUpPassword?.dirty || SignUpPassword?.touched)"
+            ><i class="fas fa-check"></i>
+          </mdb-success>
+        </mdb-form-control>
+
+        <!-- Submit button -->
+        <button mdbRipple type="submit" class="btn btn-primary btn-block mb-3" [disabled]="this.signUpForm.invalid" (click)="onSubmitSignUp()">
+          Зарегистрироваться
+        </button>
+      </form>
+    </mdb-tab
+    >
+  </mdb-tabs>
+</div>

@@ -1,0 +1,86 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 242px;
+    background-color: #312f3d;
+    border-radius: 4px;
+    padding: 8px 0 8px 0;
+}
+
+.card-container:hover {
+    background-color: #6c697c;
+}
+
+.card-container:hover i {
+    opacity: 80%;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.baseCard-lower-part {
+    margin-top: auto;
+    width: calc(100% - 16px);
+}
+
+.bagde-color {
+    background-color: color-mix(in srgb, #5bc27a 20%, rgba(28,26,36,0.5));
+    color: #5bc27a;
+}
+
+.text-description {
+    color: #bbb9c7;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.275px;
+}
+
+.styles-price {
+    color: #fff;
+    font-family: Inter, system-ui;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: .02em;
+}
+
+.baseCard-action-button {
+    display: flex;
+    gap: 4px;
+    height: 28px;
+}
+
+.btn-basket-buy {
+    width: 100%;
+    height: 28px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #298b2e;
+    border: 0;
+    border-radius: 4px;
+}
+
+.btn-basket-buy:hover {
+    background-color: #5ec04b !important;
+}
+
+.btn-basket-remove{
+    width: 100%;
+    height: 28px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #fa1717;
+    border: 0;
+    border-radius: 4px;
+}
+
+.btn-basket-remove:hover {
+    background-color: #fc4d4d !important;
+}

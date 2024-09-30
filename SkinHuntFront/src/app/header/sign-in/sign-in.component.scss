@@ -1,0 +1,22 @@
+.bg-sign-in {
+    background: #282633;
+}
+
+.form-outline .form-control ~ .form-label {
+    color: #747180;
+}
+
+.input-style {
+    margin-bottom: 30px;
+}
+
+.text-style {
+    color: #919191;
+}
+
+.errorText {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    color: #cc1818;
+}

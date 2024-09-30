@@ -1,0 +1,423 @@
+[
+  {
+    "Name": "Wild Lotus",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "AK47"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.1489835978,
+    "Color": "Green",
+    "Rarity": "Minimal Wear",
+    "Price": 12343.20,
+    "IsDiscount": true,
+    "PriceWithDiscount": 10857.00
+  },
+  {
+    "Name": "Gamma Doppler Emerald",
+    "Type": {
+      "Category": "Knife",
+      "Subcategory": "Butterfly"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0240136888,
+    "Color": "Green",
+    "Rarity": "Factory New",
+    "Price": 23597.80,
+    "IsDiscount": true,
+    "PriceWithDiscount": 21999.99
+  },
+  {
+    "Name": "Dragon Lore",
+    "Type": {
+      "Category": "SniperRifle",
+      "Subcategory": "AWP"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0149520924,
+    "Color": "Orange",
+    "Rarity": "Factory New",
+    "Price": 23200.00,
+    "IsDiscount": false,
+    "PriceWithDiscount": 23200.00
+  },
+  {
+    "Name": "Gungnir",
+    "Type": {
+      "Category": "SniperRifle",
+      "Subcategory": "AWP"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.5215078592,
+    "Color": "Blue",
+    "Rarity": "Battle-Scarred",
+    "Price": 9532.12,
+    "IsDiscount": true,
+    "PriceWithDiscount": 7829.00
+  },
+  {
+    "Name": "Howl",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "M4A4"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0386898331,
+    "Color": "Red",
+    "Rarity": "Factory New",
+    "Price": 8778.88,
+    "IsDiscount": true,
+    "PriceWithDiscount": 7498.52
+  },
+  {
+    "Name": "Neon Rider",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "AK47"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0834443495,
+    "Color": "Purple",
+    "Rarity": "Minimal Wear",
+    "Price": 223.80,
+    "IsDiscount": true,
+    "PriceWithDiscount": 187.58
+  },
+  {
+    "Name": "Fade",
+    "Type": {
+      "Category": "Knife",
+      "Subcategory": "M9Bayonet"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0797855929,
+    "Color": "Rainbow",
+    "Rarity": "Factory New",
+    "Price": 2246.42,
+    "IsDiscount": true,
+    "PriceWithDiscount": 2222.00
+  },
+  {
+    "Name": "Hyper Beast",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "M4A1S"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.1021553129,
+    "Color": "Blue",
+    "Rarity": "Minimal Wear",
+    "Price": 168.35,
+    "IsDiscount": true,
+    "PriceWithDiscount": 126.87
+  },
+  {
+    "Name": "Boreal Forest",
+    "Type": {
+      "Category": "Knife",
+      "Subcategory": "Skeleton"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.1311877370,
+    "Color": "Green",
+    "Rarity": "Well-Worn",
+    "Price": 412.13,
+    "IsDiscount": true,
+    "PriceWithDiscount": 358.95
+  },
+  {
+    "Name": "Redline",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "AK47"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.3683933020,
+    "Color": "Red",
+    "Rarity": "Field-Tested",
+    "Price": 22.97,
+    "IsDiscount": true,
+    "PriceWithDiscount": 15.84
+  },
+  {
+    "Name": "Crimson Web",
+    "Type": {
+      "Category": "Knife",
+      "Subcategory": "Stiletto"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.1394437850,
+    "Color": "Red",
+    "Rarity": "Minimal Wear",
+    "Price": 941.40,
+    "IsDiscount": true,
+    "PriceWithDiscount": 649.24
+  },
+  {
+    "Name": "Case Hardened",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "AK47"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.1239002794,
+    "Color": "Iridescent",
+    "Rarity": "Minimal Wear",
+    "Price": 358.74,
+    "IsDiscount": false,
+    "PriceWithDiscount": 358.74
+  },
+  {
+    "Name": "Asiimov",
+    "Type": {
+      "Category": "SniperRifle",
+      "Subcategory": "AWP"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.7097107172,
+    "Color": "Orange",
+    "Rarity": "Battle-Scarred",
+    "Price": 183.70,
+    "IsDiscount": true,
+    "PriceWithDiscount": 151.00
+  },
+  {
+    "Name": "Serum",
+    "Type": {
+      "Category": "Pistol",
+      "Subcategory": "USPS"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0986302570,
+    "Color": "burgundy",
+    "Rarity": "Minimal Wear",
+    "Price": 48.01,
+    "IsDiscount": true,
+    "PriceWithDiscount": 42.88
+  },
+  {
+    "Name": "Vulcan",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "AK47"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.1480582952,
+    "Color": "White",
+    "Rarity": "Minimal Wear",
+    "Price": 651.88,
+    "IsDiscount": false,
+    "PriceWithDiscount": 651.88
+  },
+  {
+    "Name": "Gold Arabesque",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "AK47"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0929311737,
+    "Color": "Yellow",
+    "Rarity": "Minimal Wear",
+    "Price": 9911.40,
+    "IsDiscount": false,
+    "PriceWithDiscount": 9911.40
+  },
+  {
+    "Name": "Desert Hydra",
+    "Type": {
+      "Category": "SniperRifle",
+      "Subcategory": "AWP"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0526154377,
+    "Color": "Orange",
+    "Rarity": "Factory New",
+    "Price": 5903.41,
+    "IsDiscount": true,
+    "PriceWithDiscount": 4967.00
+  },
+  {
+    "Name": "Lore",
+    "Type": {
+      "Category": "Knife",
+      "Subcategory": "M9Bayonet"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0621657781,
+    "Color": "Gold",
+    "Rarity": "Factory New",
+    "Price": 5025.09,
+    "IsDiscount": true,
+    "PriceWithDiscount": 4400.00
+  },
+  {
+    "Name": "Icarus Fell",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "M4A1S"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0839966834,
+    "Color": "Blue",
+    "Rarity": "Minimal Wear",
+    "Price": 856.71,
+    "IsDiscount": false,
+    "PriceWithDiscount": 856.71
+  },
+  {
+    "Name": "Blue Steel",
+    "Type": {
+      "Category": "Knife",
+      "Subcategory": "Karambit"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.6853950620,
+    "Color": "Blue",
+    "Rarity": "Battle-Scarred",
+    "Price": 845.19,
+    "IsDiscount": false,
+    "PriceWithDiscount": 845.19
+  },
+  {
+    "Name": "Redline",
+    "Type": {
+      "Category": "SniperRifle",
+      "Subcategory": "AWP"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.1651116014,
+    "Color": "Red",
+    "Rarity": "Field-Tested",
+    "Price": 59.71,
+    "IsDiscount": true,
+    "PriceWithDiscount": 47.65
+  },
+  {
+    "Name": "Bloodsport",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "AK47"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0558640733,
+    "Color": "Red",
+    "Rarity": "Factory New",
+    "Price": 161.57,
+    "IsDiscount": true,
+    "PriceWithDiscount": 129.00
+  },
+  {
+    "Name": "Gamma Doppler Phase 4",
+    "Type": {
+      "Category": "Knife",
+      "Subcategory": "Butterfly"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0322732665,
+    "Color": "Green",
+    "Rarity": "Factory New",
+    "Price": 4079.38,
+    "IsDiscount": true,
+    "PriceWithDiscount": 3688.59
+  },
+  {
+    "Name": "Lightning Strike", 
+    "Type": {
+      "Category": "SniperRifle",
+      "Subcategory": "AWP"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0719183236,
+    "Color": "Purple",
+    "Rarity": "Minimal Wear",
+    "Price": 755.51,
+    "IsDiscount": false,
+    "PriceWithDiscount": 755.51
+  },
+  {
+    "Name": "Golden Coil",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "M4A1S"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.4844351411,
+    "Color": "Golden",
+    "Rarity": "Battle-Scarred",
+    "Price": 219.85,
+    "IsDiscount": false,
+    "PriceWithDiscount": 219.85
+  },
+  {
+    "Name": "Doppler Phase 2",
+    "Type": {
+      "Category": "Knife",
+      "Subcategory": "Butterfly"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0348449349,
+    "Color": "Pink",
+    "Rarity": "Factory New",
+    "Price": 3540.95,
+    "IsDiscount": true,
+    "PriceWithDiscount": 3077.90
+  },
+  {
+    "Name": "Hydroponic",
+    "Type": {
+      "Category": "AssaultRifle",
+      "Subcategory": "AK47"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0549590588,
+    "Color": "Light green",
+    "Rarity": "Factory New",
+    "Price": 2621.41,
+    "IsDiscount": false,
+    "PriceWithDiscount": 2621.41
+  },
+  {
+    "Name": "Containment Breach",
+    "Type": {
+      "Category": "SniperRifle",
+      "Subcategory": "AWP"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.1288096458,
+    "Color": "Light green",
+    "Rarity": "Minimal Wear",
+    "Price": 333.33,
+    "IsDiscount": false,
+    "PriceWithDiscount": 333.33
+  },
+  {
+    "Name": "Blue Steel",
+    "Type": {
+      "Category": "Knife",
+      "Subcategory": "Nomad"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.1445537210,
+    "Color": "Blue",
+    "Rarity": "Minimal Wear",
+    "Price": 445.47,
+    "IsDiscount": true,
+    "PriceWithDiscount": 368.00
+  },
+  {
+    "Name": "Gamma Doppler Phase 2", 
+    "Type": {
+      "Category": "Knife",
+      "Subcategory": "M9Bayonet"
+    },
+    "ReleaseDate": "2023-08-02T12:34:56Z",
+    "Float": 0.0081575830,
+    "Color": "Green",
+    "Rarity": "Factory New",
+    "Price": 3123.60,
+    "IsDiscount": false,
+    "PriceWithDiscount": 3123.60
+  }
+]
+

@@ -1,0 +1,384 @@
+<div class="buy-page-main">
+    <div class="buy-page-filters">
+        <div class="buy-page-wrapper-filters">
+            <div class="buy-page-wrapper-filters-title">
+                <span class="filters-title">Фильтры</span>
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="buy-page-filters-inner">
+                <div class="styles-wrapper">
+                    <div class="collapse-container">
+                        <div class="collapse-container-header">
+                            <div class="collapse-container-title-group">
+                                <div class="media-queries-desktop">
+                                    <span class="text-savedfilters">
+                                        Сохр. фильтры
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse-container">
+                        <div class="collapse-container-header">
+                            <div class="collapse-container-title-group">
+                                <div class="media-queries-desktop">
+                                    <span class="text-savedfilters">
+                                        Цена
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-icon-plus" (click)="onChangedSubmenuList('price')">
+                            <i class="fas fa-plus fa-xs icon-styles"></i>
+                        </button>
+                    </div>
+                  @if (showSubmenuList$().includes('price')) {
+                    <div class="skinPrice">
+                      <form class="skinPrice-form">
+                        <input type="number" class="skinPrice-input" placeholder="USD 0.00" (change)="onChangePriceAbove($event)">
+                      </form>
+                      <div class="skinPrice-delimiter">
+                      </div>
+                      <form class="skinPrice-form">
+                        <input type="number" class="skinPrice-input" placeholder="USD ∞" (change)="onChangePriceLess($event)">
+                      </form>
+                    </div>
+                  }
+                    <div class="collapse-container">
+                        <div class="collapse-container-header">
+                            <div class="collapse-container-title-group">
+                                <div class="media-queries-desktop">
+                                    <span class="text-savedfilters">
+                                        Тип
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-icon-plus" (click)="onChangedSubmenuList('type')">
+                            <i class="fas fa-plus fa-xs icon-styles"></i>
+                        </button>
+                    </div>
+                  @if (showSubmenuList$().includes('type')) {
+                    <div class="skinType">
+                        <ul class="skinType-list">
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="Knifes"
+                                (change)="onChangeType(0)"
+                              />
+                              <label class="" for="Knifes">Ножи</label>
+                            </li>
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="Gloves"
+                                (change)="onChangeType(1)"
+                              />
+                              <label class="" for="Gloves">Перчатки</label>
+                            </li>
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="Pistols"
+                                (change)="onChangeType(2)"
+                              />
+                              <label class="" for="Pistols">Пистолеты</label>
+                            </li>
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="SMGs"
+                                (change)="onChangeType(3)"
+                              />
+                              <label class="" for="SMGs">ПП</label>
+                            </li>
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="AssaultRifles"
+                                (change)="onChangeType(4)"
+                              />
+                              <label class="" for="AssaultRifles">Штурмовые винтовки</label>
+                            </li>
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="SniperRifles"
+                                (change)="onChangeType(5)"
+                              />
+                              <label class="" for="SniperRifles">Снайперские винтовки</label>
+                            </li>
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="ShotGuns"
+                                (change)="onChangeType(6)"
+                              />
+                              <label class="" for="ShotGuns">Дробовики</label>
+                            </li>
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="MachineGuns"
+                                (change)="onChangeType(7)"
+                              />
+                              <label class="" for="MachineGuns">Пулеметы</label>
+                            </li>
+                        </ul>
+                    </div>
+                  }
+                    <div class="collapse-container">
+                        <div class="collapse-container-header">
+                            <div class="collapse-container-title-group">
+                                <div class="media-queries-desktop">
+                                    <span class="text-savedfilters">
+                                        Качество
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-icon-plus" (click)="onChangedSubmenuList('quality')">
+                            <i class="fas fa-plus fa-xs icon-styles"></i>
+                        </button>
+                    </div>
+                  @if (showSubmenuList$().includes('quality')) {
+                    <div class="skinQuality">
+                        <ul class="skinQuality-list">
+                            <li class="skinQuality-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="factoryNew"
+                                (change)="onChangeRarity('Factory New')"
+                              />
+                              <label class="" for="factoryNew">Прямо с завода</label>
+                            </li>
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="minimalWear"
+                                (change)="onChangeRarity('Minimal Wear')"
+                              />
+                              <label class="" for="minimalWear">Немного поношенное</label>
+                            </li>
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="fieldTested"
+                                (change)="onChangeRarity('Field-Tested')"
+                              />
+                              <label class="" for="fieldTested">После полевых испытаний</label>
+                            </li>
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="wellworn"
+                                (change)="onChangeRarity('Well-Worn')"
+                              />
+                              <label class="" for="wellworn">Поношенное</label>
+                            </li>
+                            <li class="skinType-list-item">
+                                <input
+                                mdbCheckbox
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="battleScarred"
+                                (change)="onChangeRarity('Battle-Scarred')"
+                              />
+                              <label class="" for="battleScarred">Закаленное в боях</label>
+                            </li>
+                        </ul>
+                    </div>
+                  }
+                    <div class="collapse-container">
+                        <div class="collapse-container-header">
+                            <div class="collapse-container-title-group">
+                                <div class="media-queries-desktop">
+                                    <span class="text-savedfilters">
+                                        Float
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-icon-plus" (click)="onChangedSubmenuList('float')">
+                            <i class="fas fa-plus fa-xs icon-styles"></i>
+                        </button>
+                    </div>
+                    @if (showSubmenuList$().includes('float')) {
+                    <div class="skinFloat">
+                        <form class="skinFloat-form">
+                          <input type="number" class="skinFloat-input" placeholder="0.0000" (change)="onChangeFloatAbove($event)">
+                        </form>
+                        <div class="skinFloat-delimiter">
+                        </div>
+                        <form class="skinFloat-form">
+                          <input type="number" class="skinFloat-input" placeholder="1" (change)="onChangeFloatLess($event)">
+                        </form>
+                      </div>
+                  }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buy-page-content">
+        <div>
+            <div class="content-header-container">
+                <div class="spacer-container">
+                    <div class="spacer-item">
+                        <div>
+                            <div class="spacer-container">
+                                <div class="spacer-item" style="margin-right: 24px;">
+                                    <div class="inventory-header-search">
+                                        <div class="inventory-header-search-wrapper">
+                                            <div class="csm-ui-wrapper">
+                                                <div class="csm-ui-start-slot">
+                                                    <span class="csm-search-icon">
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                </div>
+                                                <input
+                                                  placeholder="Поиск..."
+                                                  autocomplete="off"
+                                                  class="csm-ui-input"
+                                                  [ngModel]="typehead$()"
+                                                  (ngModelChange)="typehead$.set($event)"
+                                                >
+                                                <div class="csm-ui-end-slot">
+                                                    <button class="clear-button-search" (click)="typehead$.set('')">
+                                                        <i class="fas fa-times"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="spacer-item">
+                                    <div class="filter-dropdown-button">
+                                        <div mdbDropdown #filterDropdownMenuButton class="dropdown">
+                                          <button
+                                            class="btn-dropdown-filter dropdown-toggle p-0"
+                                            type="button"
+                                            id="filterDropdownMenuButton"
+                                            aria-expanded="false"
+                                            mdbDropdownToggle
+                                          >
+                                          @if (sortBy$() === 'default') {
+                                            По умолчанию
+                                          }
+                                          @if (sortBy$() === 'priceMax') {
+                                            <i class="fas fa-sort-amount-down me-1"></i>
+                                            Цена: Макс.
+                                          }
+                                          @if (sortBy$() === 'priceMin') {
+                                            <i class="fas fa-sort-amount-up me-1"></i>
+                                            Цена: Мин.
+                                          }
+                                          @if (sortBy$() === 'floatMax') {
+                                            <i class="fas fa-sort-amount-down me-1"></i>
+                                            Float: Макс.
+                                          }
+                                          @if (sortBy$() === 'floatMin') {
+                                            <i class="fas fa-sort-amount-up me-1"></i>
+                                            Float: Мин.
+                                          }
+                                          </button>
+                                          <ul
+                                            mdbDropdownMenu
+                                            class="dropdown-menu"
+                                            aria-labelledby="filterDropdownMenuButton"
+                                          >
+                                            <li>
+                                                <a class="dropdown-item" href="#" (click)="setSortBy('default')">
+                                                    По умолчанию
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#" (click)="setSortBy('priceMax')">
+                                                    <i class="fas fa-sort-amount-down me-1"></i>
+                                                    Цена: Макс.
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#" (click)="setSortBy('priceMin')">
+                                                    <i class="fas fa-sort-amount-up me-1"></i>
+                                                    Цена: Мин.
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#" (click)="setSortBy('floatMax')">
+                                                    <i class="fas fa-sort-amount-down me-1"></i>
+                                                    Float: Макс.
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#" (click)="setSortBy('floatMin')">
+                                                    <i class="fas fa-sort-amount-up me-1"></i>
+                                                    Float: Мин.
+                                                </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket">
+                    <button class="basket-btn" (click)="openBasket()">
+                        <span class="basket-text">
+                            $
+                        </span>
+                        <i class="fas fa-shopping-basket icon-style" style="opacity: 80%;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="buy-page-body">
+            <div class="sellOrders-wrapper">
+                <div class="sellOrdersList-wrapper">
+                    @for (itemCard of cardsList$(); track itemCard) {
+                        <skin-item-card [card]="itemCard" (addToBasket)="addSkinToBasket($event)"></skin-item-card>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

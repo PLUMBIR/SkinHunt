@@ -1,0 +1,15 @@
+.users-container {
+    background-color: #282633;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: calc(100vh - 209px);
+    height: auto;
+    padding: 10px;
+    gap: 30px;
+    overflow-y: auto;
+}

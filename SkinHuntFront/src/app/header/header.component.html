@@ -1,0 +1,93 @@
+<nav class="navbar navbar-expand-lg p-0">
+  <div class="header">
+    <a class="navbar-brand ms-1" [routerLink]="['']">
+      <img
+        src="assets/new_logo.png"
+        height="60"
+        width="200"
+        alt="SkinHunt"
+        loading="lazy"
+      />
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="buttonsNav.toggle()"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div
+      class="collapse navbar-collapse"
+      id="navbarButtonsExample"
+      mdbCollapse
+      #buttonsNav="mdbCollapse"
+    >
+      <ul class="navbar-nav me-auto mb-2 ms-4 mb-lg-0">
+        <li>
+          <a class="nav-link" [routerLink]="['']">
+            Market
+            <span class="absolute-strip-market"></span>
+          </a>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center">
+        @if (this.authService.user$()) {
+          <div class="text-white fs-6 me-2">
+            Баланс: {{userBalance$()?.toFixed(2)}} $
+          </div>
+          <div mdbDropdown #profileDropdown class="dropdown">
+            <button
+              class="btn dropdown-toggle p-0 d-flex align-items-center"
+              type="button"
+              id="profileDropdownMenuButton"
+              aria-expanded="false"
+              mdbDropdownToggle
+            >
+              <a class="nav-link d-sm-flex align-items-sm-center">
+                <img
+                  [src]="userAvatar$()"
+                  class="rounded-circle"
+                  height="30"
+                  width="30"
+                  alt=""
+                  loading="lazy"
+                />
+              </a>
+            </button>
+            <ul mdbDropdownMenu
+                class="dropdown-menu dropdown-menu-end dropdown-menu-start"
+                aria-labelledby="rofileDropdownMenuButton">
+              <li>
+                <a class="dropdown-item" [routerLink]="['/profile']">Профиль</a>
+              </li>
+              @if (this.adminMenu$()) 
+              {
+                <li>
+                  <a class="dropdown-item" [routerLink]="['/users']">Пользователи</a>
+                </li>
+              }
+              <li>
+                <a class="dropdown-item" (click)="logOutHandler()">
+                  Выйти
+                  <i class="fas fa-sign-out-alt ms-1"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        }
+        @else{
+          <button type="button" class="button-styles me-2" (click)="openSignInModal()">
+            <span class="email-styles">
+              <img src="assets/email-icon.png" alt="email">
+            </span>
+            Войти через Email
+          </button>
+        }
+      </div>
+    </div>
+  </div>
+</nav>

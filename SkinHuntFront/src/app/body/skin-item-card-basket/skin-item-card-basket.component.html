@@ -1,0 +1,32 @@
+<div class="card-container">
+    <img class="card-image" [src]="basketValue().skin.photo" loading="lazy">
+    <div class="baseCard-lower-part">
+      @if (basketValue().skin.isDiscount) {
+        <div class="baseCard-tag">
+          <span class="badge bagde-color">-{{(((basketValue().skin.price - basketValue().skin.priceWithDiscount) / basketValue().skin.price) * 100).toFixed(2)}}%</span>
+        </div>
+      }
+      <div class="baseCard-description">
+          <span class="text-description">
+              FN / {{basketValue().skin.float}}
+          </span>
+      </div>
+      <div class="baseCard-price">
+          <div class="price">
+              <span class="styles-price">
+                  <span>
+                    $ {{basketValue().skin.price}}
+                  </span>
+              </span>
+          </div>
+      </div>
+      <div class="baseCard-action-button">
+          <button type="button" class="btn-basket-buy" (click)="buySkinFromBasket.emit({ id: basketValue().id, skinId: basketValue().skin.id })">
+            Купить
+          </button>
+          <button type="button" class="btn-basket-remove" (click)="removeFromBasket.emit(basketValue().id)">
+            Удалить
+          </button>
+      </div>
+    </div>
+  </div>

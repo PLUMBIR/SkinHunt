@@ -1,0 +1,53 @@
+<section class="section about-section">
+    <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+            <div class="col-lg-6">
+                <div class="about-text">
+                    <div class="row about-list">
+                        <div class="col-md-6">
+                            <div class="media">
+                                <label>Email</label>
+                                <p>{{userEmail$()}}</p>
+                            </div>
+                            <div class="media">
+                                <label>Номер телефона</label>
+                                <p>{{userNumber$()}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-avatar">
+                    <img [src]="selectedImage$()" alt="Selected Image" style="border-radius: 50%; width: 350px; height: 350px;">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="button-styles me-2" (click)="fileInput.click()">Вставить фото</button>
+            <input type="file" (change)="onFileSelected($event)" style="display: none;" #fileInput>
+        </div>
+        <div class="counter">
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <div class="count-data text-center">
+                        <h6 class="count h2">{{this.soldsCount$()}}</h6>
+                        <p class="m-0px font-w-600">Куплено скинов</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="count-data text-center">
+                        <h6 class="count h2">{{basketCount$()}}</h6>
+                        <p class="m-0px font-w-600">Скинов в корзине</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="count-data text-center">
+                        <h6 class="count h2">{{userBalance$()?.toFixed(2)}} $</h6>
+                        <p class="m-0px font-w-600">Баланс</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

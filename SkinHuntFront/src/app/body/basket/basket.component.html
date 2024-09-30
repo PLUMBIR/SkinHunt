@@ -1,0 +1,15 @@
+<div class="basket-page">
+    <app-side-nav></app-side-nav>
+    <div class="basket-body">
+        <div class="basket-wrapper">
+            <div class="basketList-wrapper">
+                @for (basketValue of basketValueList$(); track basketValue.id) {
+                    <skin-item-card-basket [basketValue]="basketValue" (removeFromBasket)="removeSkinFromBasket($event)" (buySkinFromBasket)="buySkinFromBasket($event)"></skin-item-card-basket>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
